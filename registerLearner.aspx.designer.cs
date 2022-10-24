@@ -24,6 +24,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox learnerFirstNameTxtBox;
 
         /// <summary>
+        /// firstName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator firstName;
+
+        /// <summary>
         /// learnerLastNameTxtBox control.
         /// </summary>
         /// <remarks>
@@ -33,22 +42,49 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox learnerLastNameTxtBox;
 
         /// <summary>
-        /// teachIdTextBx control.
+        /// lastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox teachIdTextBx;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator lastName;
 
         /// <summary>
-        /// teachEmailTxtBox control.
+        /// learnIdNumTextBx control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox teachEmailTxtBox;
+        protected global::System.Web.UI.WebControls.TextBox learnIdNumTextBx;
+
+        /// <summary>
+        /// idNum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator idNum;
+
+        /// <summary>
+        /// learnEmailTxtBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox learnEmailTxtBox;
+
+        /// <summary>
+        /// emailAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator emailAddress;
 
         /// <summary>
         /// classTeacherTxtBox control.
@@ -60,6 +96,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox classTeacherTxtBox;
 
         /// <summary>
+        /// teachID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator teachID;
+
+        /// <summary>
         /// passwordTxtBox control.
         /// </summary>
         /// <remarks>
@@ -69,6 +114,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox passwordTxtBox;
 
         /// <summary>
+        /// passwordCreate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordCreate;
+
+        /// <summary>
         /// confirmPassTxtBox control.
         /// </summary>
         /// <remarks>
@@ -76,6 +130,15 @@ namespace OpenMind
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox confirmPassTxtBox;
+
+        /// <summary>
+        /// passwordConfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator passwordConfirm;
 
         /// <summary>
         /// regLearnerBtn control.

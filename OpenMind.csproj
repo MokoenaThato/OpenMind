@@ -69,39 +69,11 @@
   <ItemGroup>
     <Content Include="addAnnouncements.aspx" />
     <Content Include="adminlogin.aspx" />
-    <Content Include="adminManagement.aspx" />
     <Content Include="AdminPage.aspx" />
-    <Content Include="App_Data\AdminsDb.mdf" />
-    <Content Include="App_Data\AdminsDb_log.ldf">
-      <DependentUpon>AdminsDb.mdf</DependentUpon>
+    <Content Include="App_Data\CroxleyDatabase.mdf" />
+    <Content Include="App_Data\CroxleyDatabase_log.ldf">
+      <DependentUpon>CroxleyDatabase.mdf</DependentUpon>
     </Content>
-    <Content Include="App_Data\AnnouncementsDb.mdf" />
-    <Content Include="App_Data\AnnouncementsDb_log.ldf">
-      <DependentUpon>AnnouncementsDb.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\EngGradebookDb.mdf" />
-    <Content Include="App_Data\EngGradebookDb_log.ldf">
-      <DependentUpon>EngGradebookDb.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\LearnersDb.mdf" />
-    <Content Include="App_Data\LearnersDb_log.ldf">
-      <DependentUpon>LearnersDb.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\MathsGradeDb.mdf" />
-    <Content Include="App_Data\MathsGradeDb_log.ldf">
-      <DependentUpon>MathsGradeDb.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\PhysicsGradebookDb.mdf" />
-    <Content Include="App_Data\PhysicsGradebookDb_log.ldf">
-      <DependentUpon>PhysicsGradebookDb.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\TeachersDb.mdf" />
-    <Content Include="App_Data\TeachersDb_log.ldf">
-      <DependentUpon>TeachersDb.mdf</DependentUpon>
-    </Content>
-    <Content Include="assignEngMarks.aspx" />
-    <Content Include="assignMathsMarks.aspx" />
-    <Content Include="assignPhysicsMarks.aspx" />
     <Content Include="Boostrap\css\bootstrap.min.css" />
     <Content Include="Boostrap\js\bootstrap.min.js" />
     <Content Include="Boostrap\js\jquery-3.3.1.slim.min.js" />
@@ -109,7 +81,15 @@
     <Content Include="CSS\footerStyleSheet.css" />
     <Content Include="datatables\css\jquery.dataTables.min.css" />
     <Content Include="datatables\js\jquery.dataTables.min.js" />
-    <Content Include="EngGbManagement.aspx" />
+    <Content Include="deleteAdmin.aspx" />
+    <Content Include="deleteAnnouncements.aspx" />
+    <Content Include="deleteEngPage.aspx" />
+    <Content Include="deleteLearners.aspx" />
+    <Content Include="deleteMathsPage.aspx" />
+    <Content Include="deletePhysicsPage.aspx" />
+    <Content Include="deleteTeachers.aspx" />
+    <Content Include="EngGbPage.aspx" />
+    <Content Include="EngMarksManagement.aspx" />
     <Content Include="fontawesome\css\all.css" />
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\css\brands.css" />
@@ -2167,20 +2147,47 @@
     <Content Include="homepage.aspx" />
     <Content Include="imgs\admin.png" />
     <Content Include="imgs\announce.png" />
+    <Content Include="imgs\anns.jpg" />
     <Content Include="imgs\BookBrain.jpg" />
+    <Content Include="imgs\bottom.jpg" />
+    <Content Include="imgs\GB.png" />
+    <Content Include="imgs\gradebook.jpg" />
+    <Content Include="imgs\gradebook.png" />
+    <Content Include="imgs\help.jpg" />
     <Content Include="imgs\learner.png" />
+    <Content Include="imgs\logo.jpg" />
+    <Content Include="imgs\LogoBlue.jpg" />
     <Content Include="imgs\marks.jpg" />
     <Content Include="imgs\teacher.jpg" />
+    <Content Include="imgs\top.jpg" />
     <Content Include="learnerlogin.aspx" />
-    <Content Include="learnerManagement.aspx" />
-    <Content Include="MathsGbManagement.aspx" />
-    <Content Include="PhysicsGbManagement.aspx" />
+    <Content Include="learnerPage.aspx" />
+    <Content Include="maintainAdmin.aspx" />
+    <Content Include="maintainAnn.aspx" />
+    <Content Include="maintainLearners.aspx" />
+    <Content Include="maintainTeachers.aspx" />
+    <Content Include="mathsGbPage.aspx" />
+    <Content Include="MathsMarksManagement.aspx" />
+    <Content Include="MathsReportPage.aspx" />
+    <Content Include="physicsGbPage.aspx" />
+    <Content Include="PhysicsMarksManagement.aspx" />
+    <Content Include="PhysicsReportPage.aspx" />
     <Content Include="registerAdmin.aspx" />
     <Content Include="registerLearner.aspx" />
     <Content Include="registerTeacher.aspx" />
+    <Content Include="EngReportPage.aspx" />
+    <Content Include="subjectReport.aspx" />
+    <Content Include="subjectsPage.aspx" />
     <Content Include="teacherlogin.aspx" />
-    <Content Include="teacherManagement.aspx" />
     <Content Include="teacherPage.aspx" />
+    <Content Include="updateAdmin.aspx" />
+    <Content Include="updateAnnouncements.aspx" />
+    <Content Include="updateEnglishPage.aspx" />
+    <Content Include="updateLearners.aspx" />
+    <Content Include="updateMathsPage.aspx" />
+    <Content Include="updatePhysicsPage.aspx" />
+    <Content Include="updateTeachers.aspx" />
+    <Content Include="viewAnnouncement.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -2199,13 +2206,6 @@
     <Compile Include="adminlogin.aspx.designer.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="adminManagement.aspx.cs">
-      <DependentUpon>adminManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="adminManagement.aspx.designer.cs">
-      <DependentUpon>adminManagement.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2213,33 +2213,68 @@
     <Compile Include="AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="assignEngMarks.aspx.cs">
-      <DependentUpon>assignEngMarks.aspx</DependentUpon>
+    <Compile Include="deleteAdmin.aspx.cs">
+      <DependentUpon>deleteAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="assignEngMarks.aspx.designer.cs">
-      <DependentUpon>assignEngMarks.aspx</DependentUpon>
+    <Compile Include="deleteAdmin.aspx.designer.cs">
+      <DependentUpon>deleteAdmin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="assignMathsMarks.aspx.cs">
-      <DependentUpon>assignMathsMarks.aspx</DependentUpon>
+    <Compile Include="deleteAnnouncements.aspx.cs">
+      <DependentUpon>deleteAnnouncements.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="assignMathsMarks.aspx.designer.cs">
-      <DependentUpon>assignMathsMarks.aspx</DependentUpon>
+    <Compile Include="deleteAnnouncements.aspx.designer.cs">
+      <DependentUpon>deleteAnnouncements.aspx</DependentUpon>
     </Compile>
-    <Compile Include="assignPhysicsMarks.aspx.cs">
-      <DependentUpon>assignPhysicsMarks.aspx</DependentUpon>
+    <Compile Include="deleteEngPage.aspx.cs">
+      <DependentUpon>deleteEngPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="assignPhysicsMarks.aspx.designer.cs">
-      <DependentUpon>assignPhysicsMarks.aspx</DependentUpon>
+    <Compile Include="deleteEngPage.aspx.designer.cs">
+      <DependentUpon>deleteEngPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EngGbManagement.aspx.cs">
-      <DependentUpon>EngGbManagement.aspx</DependentUpon>
+    <Compile Include="deleteLearners.aspx.cs">
+      <DependentUpon>deleteLearners.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EngGbManagement.aspx.designer.cs">
-      <DependentUpon>EngGbManagement.aspx</DependentUpon>
+    <Compile Include="deleteLearners.aspx.designer.cs">
+      <DependentUpon>deleteLearners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deleteMathsPage.aspx.cs">
+      <DependentUpon>deleteMathsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deleteMathsPage.aspx.designer.cs">
+      <DependentUpon>deleteMathsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deletePhysicsPage.aspx.cs">
+      <DependentUpon>deletePhysicsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deletePhysicsPage.aspx.designer.cs">
+      <DependentUpon>deletePhysicsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deleteTeachers.aspx.cs">
+      <DependentUpon>deleteTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deleteTeachers.aspx.designer.cs">
+      <DependentUpon>deleteTeachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EngGbPage.aspx.cs">
+      <DependentUpon>EngGbPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EngGbPage.aspx.designer.cs">
+      <DependentUpon>EngGbPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EngMarksManagement.aspx.cs">
+      <DependentUpon>EngMarksManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EngMarksManagement.aspx.designer.cs">
+      <DependentUpon>EngMarksManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -2255,19 +2290,61 @@
     <Compile Include="learnerlogin.aspx.designer.cs">
       <DependentUpon>learnerlogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="learnerManagement.aspx.cs">
-      <DependentUpon>learnerManagement.aspx</DependentUpon>
+    <Compile Include="learnerPage.aspx.cs">
+      <DependentUpon>learnerPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="learnerManagement.aspx.designer.cs">
-      <DependentUpon>learnerManagement.aspx</DependentUpon>
+    <Compile Include="learnerPage.aspx.designer.cs">
+      <DependentUpon>learnerPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MathsGbManagement.aspx.cs">
-      <DependentUpon>MathsGbManagement.aspx</DependentUpon>
+    <Compile Include="maintainAdmin.aspx.cs">
+      <DependentUpon>maintainAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MathsGbManagement.aspx.designer.cs">
-      <DependentUpon>MathsGbManagement.aspx</DependentUpon>
+    <Compile Include="maintainAdmin.aspx.designer.cs">
+      <DependentUpon>maintainAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maintainAnn.aspx.cs">
+      <DependentUpon>maintainAnn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maintainAnn.aspx.designer.cs">
+      <DependentUpon>maintainAnn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maintainLearners.aspx.cs">
+      <DependentUpon>maintainLearners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maintainLearners.aspx.designer.cs">
+      <DependentUpon>maintainLearners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maintainTeachers.aspx.cs">
+      <DependentUpon>maintainTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maintainTeachers.aspx.designer.cs">
+      <DependentUpon>maintainTeachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mathsGbPage.aspx.cs">
+      <DependentUpon>mathsGbPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mathsGbPage.aspx.designer.cs">
+      <DependentUpon>mathsGbPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MathsMarksManagement.aspx.cs">
+      <DependentUpon>MathsMarksManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MathsMarksManagement.aspx.designer.cs">
+      <DependentUpon>MathsMarksManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MathsReportPage.aspx.cs">
+      <DependentUpon>MathsReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MathsReportPage.aspx.designer.cs">
+      <DependentUpon>MathsReportPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="OpenMind.Master.cs">
       <DependentUpon>OpenMind.Master</DependentUpon>
@@ -2276,12 +2353,26 @@
     <Compile Include="OpenMind.Master.designer.cs">
       <DependentUpon>OpenMind.Master</DependentUpon>
     </Compile>
-    <Compile Include="PhysicsGbManagement.aspx.cs">
-      <DependentUpon>PhysicsGbManagement.aspx</DependentUpon>
+    <Compile Include="physicsGbPage.aspx.cs">
+      <DependentUpon>physicsGbPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PhysicsGbManagement.aspx.designer.cs">
-      <DependentUpon>PhysicsGbManagement.aspx</DependentUpon>
+    <Compile Include="physicsGbPage.aspx.designer.cs">
+      <DependentUpon>physicsGbPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicsMarksManagement.aspx.cs">
+      <DependentUpon>PhysicsMarksManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhysicsMarksManagement.aspx.designer.cs">
+      <DependentUpon>PhysicsMarksManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicsReportPage.aspx.cs">
+      <DependentUpon>PhysicsReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhysicsReportPage.aspx.designer.cs">
+      <DependentUpon>PhysicsReportPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="registerAdmin.aspx.cs">
@@ -2305,6 +2396,27 @@
     <Compile Include="registerTeacher.aspx.designer.cs">
       <DependentUpon>registerTeacher.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EngReportPage.aspx.cs">
+      <DependentUpon>EngReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EngReportPage.aspx.designer.cs">
+      <DependentUpon>EngReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subjectReport.aspx.cs">
+      <DependentUpon>subjectReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subjectReport.aspx.designer.cs">
+      <DependentUpon>subjectReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subjectsPage.aspx.cs">
+      <DependentUpon>subjectsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="subjectsPage.aspx.designer.cs">
+      <DependentUpon>subjectsPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="teacherlogin.aspx.cs">
       <DependentUpon>teacherlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2312,19 +2424,68 @@
     <Compile Include="teacherlogin.aspx.designer.cs">
       <DependentUpon>teacherlogin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="teacherManagement.aspx.cs">
-      <DependentUpon>teacherManagement.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="teacherManagement.aspx.designer.cs">
-      <DependentUpon>teacherManagement.aspx</DependentUpon>
-    </Compile>
     <Compile Include="teacherPage.aspx.cs">
       <DependentUpon>teacherPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="teacherPage.aspx.designer.cs">
       <DependentUpon>teacherPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateAdmin.aspx.cs">
+      <DependentUpon>updateAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateAdmin.aspx.designer.cs">
+      <DependentUpon>updateAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateAnnouncements.aspx.cs">
+      <DependentUpon>updateAnnouncements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateAnnouncements.aspx.designer.cs">
+      <DependentUpon>updateAnnouncements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateEnglishPage.aspx.cs">
+      <DependentUpon>updateEnglishPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateEnglishPage.aspx.designer.cs">
+      <DependentUpon>updateEnglishPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateLearners.aspx.cs">
+      <DependentUpon>updateLearners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateLearners.aspx.designer.cs">
+      <DependentUpon>updateLearners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateMathsPage.aspx.cs">
+      <DependentUpon>updateMathsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateMathsPage.aspx.designer.cs">
+      <DependentUpon>updateMathsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updatePhysicsPage.aspx.cs">
+      <DependentUpon>updatePhysicsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updatePhysicsPage.aspx.designer.cs">
+      <DependentUpon>updatePhysicsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateTeachers.aspx.cs">
+      <DependentUpon>updateTeachers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateTeachers.aspx.designer.cs">
+      <DependentUpon>updateTeachers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewAnnouncement.aspx.cs">
+      <DependentUpon>viewAnnouncement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewAnnouncement.aspx.designer.cs">
+      <DependentUpon>viewAnnouncement.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

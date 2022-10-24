@@ -13,5 +13,25 @@ namespace OpenMind
         {
 
         }
+
+        protected void EngManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EngMarksManagement.aspx");
+        }
+
+        protected void MathManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MathsMarksManagement.aspx");
+        }
+
+        protected void PhyManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PhysicsMarksManagement.aspx");
+        }
+
+        protected void reqBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("subjectReport.aspx");
+        }
     }
 }

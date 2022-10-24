@@ -44,16 +44,18 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="teacherIdTxtBox" 
                                          runat="server" placeholder="Teacher ID"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="tID_required" runat="server" ControlToValidate="teacherIdTxtBox" ErrorMessage="Please enter teacher id" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
 
                                   <label>Teacher Password</label>
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="teacherPasswordTxtBox" 
                                          runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="Password_required" runat="server" ControlToValidate="teacherPasswordTxtBox" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="loginBtn" runat="server" Text="Login" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="loginBtn" runat="server" Text="Login" OnClick="loginBtn_Click" />
                                  </div>
 
                              </div>

@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
     <div class="container">
         <div class="row">
              <div class="col-md-6 mx-auto">
@@ -45,16 +44,18 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="adminIdTxtBox" 
                                          runat="server" placeholder="Admin ID"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="adminIDrequired" runat="server" ControlToValidate="adminIdTxtBox" ErrorMessage="Please enter admin id to log-in" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
 
                                   <label>Admin Password</label>
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="adminPasswordTxtBox" 
                                          runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="passwordRequired" runat="server" ControlToValidate="adminPasswordTxtBox" ErrorMessage="Please enter password" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="loginBtn" runat="server" Text="Login" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="loginBtn" runat="server" Text="Login" OnClick="loginBtn_Click" />
                                  </div>
 
                              </div>

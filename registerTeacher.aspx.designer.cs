@@ -24,6 +24,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox teachFirstNameTxtBox;
 
         /// <summary>
+        /// requiredFname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredFname;
+
+        /// <summary>
         /// teachLastNameTxtBox control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace OpenMind
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teachLastNameTxtBox;
+
+        /// <summary>
+        /// requiredLname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredLname;
 
         /// <summary>
         /// teachIdTextBx control.
@@ -42,6 +60,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox teachIdTextBx;
 
         /// <summary>
+        /// requiredIDnum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredIDnum;
+
+        /// <summary>
         /// teachEmailTxtBox control.
         /// </summary>
         /// <remarks>
@@ -49,6 +76,15 @@ namespace OpenMind
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teachEmailTxtBox;
+
+        /// <summary>
+        /// validateEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator validateEmail;
 
         /// <summary>
         /// subjectTeachTxtBox control.
@@ -60,6 +96,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox subjectTeachTxtBox;
 
         /// <summary>
+        /// subjectRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator subjectRequired;
+
+        /// <summary>
         /// passwordTxtBox control.
         /// </summary>
         /// <remarks>
@@ -69,6 +114,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox passwordTxtBox;
 
         /// <summary>
+        /// passwordRequired control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator passwordRequired;
+
+        /// <summary>
         /// confirmPassTxtBox control.
         /// </summary>
         /// <remarks>
@@ -76,6 +130,15 @@ namespace OpenMind
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox confirmPassTxtBox;
+
+        /// <summary>
+        /// comparePasswords control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator comparePasswords;
 
         /// <summary>
         /// regTeachBtn control.

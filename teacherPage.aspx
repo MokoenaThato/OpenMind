@@ -14,7 +14,7 @@
                          <div class="row">
                              <div class="col">
                                  <center>
-                                     <img width="150" height="150px" src="imgs/teacher.jpg" />
+                                     <img width="150" height="150" src="imgs/teacher.jpg" />
                                  </center>
                              </div>
                         </div>
@@ -35,7 +35,7 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="EngManBtn" runat="server" Text="English Gradebook Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="EngManBtn" runat="server" Text="English Gradebook Management" OnClick="EngManBtn_Click" />
                                  </div>
                                  <hr/>
                              </div>
@@ -45,7 +45,7 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="MathManBtn" runat="server" Text="Maths Gradebook Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="MathManBtn" runat="server" Text="Maths Gradebook Management" OnClick="MathManBtn_Click" />
                                  </div>
                                  <hr/>
                              </div>
@@ -55,17 +55,32 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="PhyManBtn" runat="server" Text="Physics Gradebook Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="PhyManBtn" runat="server" Text="Physics Gradebook Management" OnClick="PhyManBtn_Click" />
                                  </div>
                                  
                              </div>
                          </div>
                          <hr />
+
+                         <div class="row">
+                             <div class="col">
+
+                                  <div class="form-group">
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="reqBtn" runat="server" Text="Request Report" OnClick="reqBtn_Click"/>
+                                 </div>
+                                 
+                             </div>
+                         </div>
+
                        </div>
                      </div>
                  <br />
                  <br />
-                    <a href="homepage.aspx">Back to home </a><br /><br />
+                 <div class="row">
+                 <div class="col-12" align ="right">
+                    <a href="homepage.aspx">Logout </a><br /><br />
+                 </div>
+              </div>
                 </div>
             </div>
         </div>

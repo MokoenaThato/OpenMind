@@ -12,7 +12,7 @@
                          <div class="row">
                              <div class="col">
                                  <center>
-                                     <img width="150" height="150px" src="imgs/learner.png" />
+                                     <img width="150" height="150" src="imgs/learner.png" />
                                  </center>
         
                              </div>
@@ -44,16 +44,18 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="learnerIdTxtBox" 
                                          runat="server" placeholder="Learner ID"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="requiredL_ID" runat="server" ControlToValidate="learnerIdTxtBox" ErrorMessage="Please enter learner id" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
 
                                   <label>Learner Password</label>
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="learnerPasswordTxtBox" 
                                          runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="requiredPassWord" runat="server" ControlToValidate="learnerPasswordTxtBox" ErrorMessage="RequiredFieldValidator" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="loginBtn" runat="server" Text="Login" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="loginBtn" runat="server" Text="Login" OnClick="loginBtn_Click" />
                                  </div>
 
                              </div>

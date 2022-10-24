@@ -42,6 +42,7 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="adminFirstNameTxtBox" 
                                          runat="server" placeholder="First Name"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="requiredFname" runat="server" ControlToValidate="adminFirstNameTxtBox" ErrorMessage="Please enter first name" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
                              </div>
 
@@ -50,6 +51,7 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="adminLastNameTxtBox" 
                                          runat="server" placeholder="Last Name"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="requiredLname" runat="server" ControlToValidate="adminLastNameTxtBox" ErrorMessage="Please enter last name" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
                              </div>
                          </div>
@@ -60,6 +62,7 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="adminIdTextBx" 
                                          runat="server" placeholder="ID Number"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="emailRequired" runat="server" ControlToValidate="adminIdTextBx" ErrorMessage="Please enter ID number" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
                              </div>
 
@@ -69,18 +72,20 @@
                              
                              <div class="col">
                                  <center>
-                                 <span class="badge badge-pill badge-info">Create Password</span>
+                                 <span class="badge badge-pill badge-info">Create Username & Password</span>
                                   </center>
                              </div>
                             
                          </div>
 
                          <div class="row">
+
                              <div class="col-md-6">
                                <label>Create Password</label>
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="passwordTxtBox" 
                                          runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
+                                     <asp:RequiredFieldValidator ID="passwordRequired" runat="server" ControlToValidate="passwordTxtBox" ErrorMessage="Please create password" ForeColor="Red"></asp:RequiredFieldValidator>
                                  </div>
                              </div>
 
@@ -89,6 +94,7 @@
                                  <div class="form-group">
                                      <asp:TextBox CssClass="form-control" ID="confirmPassTxtBox" 
                                          runat="server" placeholder="Confirm Password" TextMode="Password"></asp:TextBox>
+                                     <asp:CompareValidator ID="passwordConfirm" runat="server" ControlToCompare="passwordTxtBox" ControlToValidate="confirmPassTxtBox" ErrorMessage="Password does not match" ForeColor="Red"></asp:CompareValidator>
                                  </div>
                              </div>
                          </div>
@@ -96,7 +102,7 @@
                          <div class="row">
                              <div class="col">
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="regAdminBtn" runat="server" Text="Register Admin" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="regAdminBtn" runat="server" Text="Register Admin" OnClick="regAdminBtn_Click" />
                                  </div>
 
                              </div>
@@ -106,7 +112,7 @@
                      </div> 
                  </div>
 
-                 <a href="homepage.aspx">Back to home </a><br /><br />
+                 <a href="maintainAdmin.aspx">Back to manage page </a><br /><br />
              </div>
         </div>
     </div>

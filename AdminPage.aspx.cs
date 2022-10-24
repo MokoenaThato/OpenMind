@@ -13,5 +13,25 @@ namespace OpenMind
         {
 
         }
+
+        protected void TeacherManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("maintainTeachers.aspx");
+        }
+
+        protected void LearnerManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("maintainLearners.aspx");
+        }
+
+        protected void AnnManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("maintainAnn.aspx");
+        }
+
+        protected void adminManBtn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("maintainAdmin.aspx");
+        }
     }
 }

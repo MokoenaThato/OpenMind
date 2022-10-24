@@ -24,6 +24,15 @@ namespace OpenMind
         protected global::System.Web.UI.WebControls.TextBox teacherIdTxtBox;
 
         /// <summary>
+        /// tID_required control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator tID_required;
+
+        /// <summary>
         /// teacherPasswordTxtBox control.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace OpenMind
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox teacherPasswordTxtBox;
+
+        /// <summary>
+        /// Password_required control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator Password_required;
 
         /// <summary>
         /// loginBtn control.

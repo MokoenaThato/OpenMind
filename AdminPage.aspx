@@ -34,7 +34,7 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="TeacherManBtn" runat="server" Text="Teacher Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="TeacherManBtn" runat="server" Text="Teacher Management" OnClick="TeacherManBtn_Click" />
                                  </div>
                                  <hr/>
                              </div>
@@ -44,7 +44,7 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="LearnerManBtn" runat="server" Text="Learner Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="LearnerManBtn" runat="server" Text="Learner Management" OnClick="LearnerManBtn_Click" />
                                  </div>
                                  <hr/>
                              </div>
@@ -54,7 +54,7 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="AnnManBtn" runat="server" Text="Announcements Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="AnnManBtn" runat="server" Text="Announcements Management" OnClick="AnnManBtn_Click" />
                                  </div>
                              </div>
                          </div>
@@ -64,7 +64,7 @@
                              <div class="col">
 
                                   <div class="form-group">
-                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="adminManBtn" runat="server" Text="Admin Management" />
+                                      <asp:Button class="btn btn-primary btn-block btn-lg"  ID="adminManBtn" runat="server" Text="Admin Management" OnClick="adminManBtn_Click" />
                                  </div>
                              </div>
                          </div>
@@ -74,7 +74,11 @@
                      </div>
                  <br />
                  <br />
-                    <a href="homepage.aspx">Back to home </a><br /><br />
+                 <div class="row">
+                 <div class="col-12" align ="right">
+                    <a href="homepage.aspx">Logout </a><br /><br />
+                 </div>
+              </div>
                 </div>
             </div>
         </div>
